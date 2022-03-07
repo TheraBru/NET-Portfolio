@@ -1,0 +1,60 @@
+@{
+    ViewData["Title"] = "Redigera innehåll";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Redigera inehåll</h1>
+</div>
+
+<section>
+    <h2>Portfolio</h2>
+    <ul>
+        <li>
+            <button>
+                <p>Hantera existerande webbplats</p>    
+                <i class="fas fa-sort-down mypageArrow"></i>
+            </button>
+            <div>
+                <ul>
+                    @foreach (var website in ViewBag.Websites){
+                        <li>
+                            <p>@website.websiteTitle</p>
+                            <div>Redigera</div>
+                            <div id="">Radera</div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </li>
+        <li>
+            <button>
+                <p>Lägg till ny webbplats</p>
+                <i class="fas fa-sort-down mypageArrow"></i>
+            </button>
+        </li>
+    </ul>
+</section>
+<section>
+    <h2>Utbildning</h2>
+    <ul>
+        <li>
+            <button>
+                <p>Hantera existerande utbildning</p>
+                <i class="fas fa-sort-down mypageArrow"></i>
+            </button>
+            <div>
+                <fieldset>
+                    <form action="">
+
+                    </form>
+                </fieldset>
+            </div>
+        </li>
+        <li>
+            <button>
+                <p>Lägg till ny utbildning</p>
+                <i class="fas fa-sort-down mypageArrow"></i>
+            </button>
+        </li>
+    </ul>
+</section>
